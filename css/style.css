@@ -1,0 +1,229 @@
+/*utility class*/
+:root{
+	--moderate-cyan: hsl(176, 50%, 47%);
+	--dark-cyan: hsl(176, 72%, 28%);
+	--black: hsl(0, 0%, 0%);
+	--dark-gray: hsl(0, 0%, 48%);
+	--body-color: hsl(0, 0%, 96%);
+	--white: #ffffff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background:var(--body-color);
+	font-family:'commissioner', sans-serif;
+	font-weight: 400;
+}
+h4{
+	font-size: 1.2rem;
+}
+.btn{
+	padding: 1.1rem 3.2rem;
+	border: none;
+	border-radius: 50px;
+}
+.btn-green{
+	background: var(--moderate-cyan);
+	color: var(--white);
+	font-size: 1.1rem;
+}
+.btn-ofs{
+	background: var(--dark-gray);
+	color: var(--white);
+}
+.btn-medium{
+	padding: 0.8rem 2rem;
+	font-size: 0.9rem;
+}
+.btn-bookmark{
+	border: none;
+	padding:1rem 1.5rem 1rem 5rem;
+	border-radius: 60px;
+	font-size: 1.1rem;
+	color: var(--dark-gray);
+}
+#btn-bookmark.active{
+	color: var(--moderate-cyan);
+	border: none;
+}
+/*NAVBAR*/
+#navbar{
+	background-image: url(../images/image-hero-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 60vh;
+}
+.nav-container{
+	padding: 3rem 8rem;
+	display: flex;
+	justify-content: space-between;
+	color: var(--white);
+}
+.nav-container h1{
+	font-size: 1.7rem;
+}
+.nav-list{
+	display: flex;
+	justify-content: center;
+}
+.nav-list li{
+	padding: 0 1rem;
+}
+.nav-list li a{
+	cursor: pointer;
+}
+.nav-list li a:hover {
+	opacity: 0.9;
+}
+/*main*/
+#card-position {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.on-img{
+	margin-top: -90px;
+}
+.card{
+	background: var(--white);
+	width: 700px;
+	border-radius: 5px;
+
+}
+.m-logo{
+	display: flex;
+	justify-content: center;
+	margin-top: -95px;
+	padding-bottom: 50px;
+
+}
+.card1{
+	padding: 4rem 3rem;
+}
+.card1 h2{
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.card1 p{
+	text-align: center;
+	font-size: 1rem;
+}
+.div-btn{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 3rem;
+	position: relative;
+	/*background: red;*/
+}
+.div-btn svg{
+	/*margin-left: 600px;*/
+	position: absolute;
+	left: 420px;
+	fill: red;
+}
+.div-btn.active svg{
+	left: 400px;
+}
+.div-btn.active svg circle{
+	fill: var(--moderate-cyan);
+}
+.div-btn.active svg path{
+	fill: var(--white);
+}
+/*card 2*/
+.card2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 3rem 0rem;
+}
+.card2-h3{
+	font-size: 1.5rem;
+	padding-left: 3rem;
+}
+.card2-h3 span{
+	display: block;
+	font-size: 0.7rem;
+	color: var(--dark-gray);
+	padding-top: 0.3rem;
+}
+.right-border{
+	border-right: 1px solid var(--dark-gray);
+}
+.progress-div{
+	grid-column: 1/ span 4;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 2rem;
+	height: 40px;
+}
+.progress {
+	width: 100%;
+	height: 100%;
+	color: var(--moderate-cyan);
+	-webkit-appearance: none;
+	appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #cccccc;
+  border-radius: 50px;
+}
+progress[value]::-webkit-progress-value {
+  background-color: hsl(176, 50%, 47%); 
+  border-radius: 40px
+}
+/* card 3 */
+.card3{
+	padding: 3rem;
+}
+.about-project h4{
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding-bottom: 2rem;
+}
+.card3 p{
+	color: var(--dark-gray);
+	font-size: 0.95rem;
+	line-height: 1.7;
+	padding-bottom: 20px;
+}
+.box-border{
+	border: 1px solid hsl(0, 0%, 80%);
+	border-radius: 10px;
+	padding: 2rem;
+	margin-bottom: 20px;
+}
+.head-foot-flex{
+	display: flex;
+	justify-content: space-between;
+}
+.txt-green{
+	color: var(--moderate-cyan);
+	font-weight: 400;
+}
+.box-head{
+	margin-bottom: 1rem;
+}
+.box-footer h4{
+	font-size: 1.6rem;
+}
+.box-footer span{
+	font-size: 0.7rem;
+	text-align: center;
+	color: var(--dark-gray);
+}
+.opace{
+	opacity: 0.4;
+}
