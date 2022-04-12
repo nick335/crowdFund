@@ -23,6 +23,7 @@
 			</div>
 		</div>
 	</nav>
+	<!-- main -->
 	<main >
 		<div id="card-position" class="on-img">
 			<div class="card card1">
@@ -40,16 +41,19 @@
 		<div id="card-position">		
 			<div class="card card2">
 				<div class="right-border">
-					<h3 class="card2-h3">$89,914<span>of $100,000 backed</span></h3>
+					<h3 class="card2-h3" id="total-sum">$89,914</h3>
+					<span class="txt-span">of $100,000 backed</span>
 				</div>
 				<div class="right-border">
-					<h3 class="card2-h3">5,007<span>total backers</span></h3>
+					<h3 class="card2-h3" id="total-number">5,007</h3>
+					<span class="txt-span">total backers</span>
 				</div>
 				<div>
-					<h3 class="card2-h3">56<span>days left</span></h3>
+					<h3 class="card2-h3">56</h3>
+					<span class="txt-span">days left</span>
 				</div>
 				<div class="progress-div">
-					<progress value="80914" min="0" max="100000"  class="progress"></progress>
+					<progress value="89914" min="0" max="100000"  class="progress" id="progress-bar"></progress>
 				</div>
 			</div>
 		</div>
@@ -70,8 +74,12 @@
 							<p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
 						</div>
 						<div class="box-footer head-foot-flex">
-							<h4>101<span> left</span> </h4>
-							<button class="btn btn-green btn-medium">Select Reward</button>
+							<div class="flex">
+								<h4 id="BSL-main">101</h4>
+								<span class="txt-dark-gray txt-medium"> left</span>
+							</div>
+							<button class="btn btn-green btn-medium" href="#"
+							onclick="popup()">Select Reward</button>
 						</div>
 					</div>
 				</div>
@@ -85,8 +93,12 @@
 							<p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included</p>
 						</div>
 						<div class="box-footer head-foot-flex">
-							<h4>64<span> left</span> </h4>
-							<button class="btn btn-green btn-medium">Select Reward</button>
+							<div class="flex">
+								<h4 id="BESL-main">64</h4>
+								<span class="txt-dark-gray txt-medium"> left</span>
+							</div>
+							<button class="btn btn-green btn-medium" 
+							onclick="popup()">Select Reward</button>
 						</div>
 					</div>
 				</div>
@@ -106,6 +118,120 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<!-- pop-up -->
+		<div class="popup-background">
+			<div class="popup">
+				<div id="card-position">
+					<div class="card card4">
+						<div class="card4-content">
+							<div class="card4-content-header">
+								<div class="close" onclick="popup()">+</div>
+								<div class="card4-head">
+									<h4>Back This project</h4>
+								</div>
+								<div class="card4-para">
+									<p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+								</div>
+							</div>
+							<div class="box-border">
+								<div class="card4-flexbox box-content">
+									<div class="circle"><div class="inner-circle"></div></div>
+									<div class="flexbox-right">
+										<div class="flexbox-right-head">
+											<h4>Pledge with no reward</h4>
+										</div>
+										<div class="flexbox-right-para">
+										<p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.</p>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="box-border" id="box-border">
+								<div class="card4-flexbox box-content">
+									<div class="circle" id="circle-el"><div class="inner-circle" id="inner-circle"></div></div>
+									<div class="flexbox-right">
+										<div class="flexbox-right-head">
+											<div class="flex-head">
+												<h4>Bamboo stand</h4>
+												<h4 class="txt-green">Pledge $25 or more</h4>
+											</div>
+											<div class="flex2">
+												<h4 id="BSL">101</h4>
+												<span class="txt-dark-gray">left</span>
+											</div>
+										</div>
+										<div class="flexbox-right-para">
+											<p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+										</div>
+									</div>
+								</div>
+								<div class="border-top" id="border-top">
+									<div class="flex-head">
+										<div>
+											<h4 class="txt-dark-gray txt-small">Enter Your pledge</h4>
+										</div>
+										<div>
+											<button class="btn-white txt-medium"><span class="txt-dark-gray">$ </span>25</button>
+											<button class="btn btn-green btn-medium txt-medium" id="continue">Continue</button>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="box-border" id="box-border2">
+								<div class="card4-flexbox box-content">
+									<div class="circle" id="circle-el2"><div class="inner-circle" id="inner-circle2"></div></div>
+									<div class="flexbox-right">
+										<div class="flexbox-right-head">
+											<div class="flex-head">
+												<h4>Black Edition stand</h4>
+												<h4 class="txt-green">Pledge $75 or more</h4>
+											</div>
+											<div class="flex2">
+												<h4 id="BESL">64</h4>
+												<span class="txt-dark-gray">left</span>
+											</div>
+										</div>
+										<div class="flexbox-right-para">
+											<p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included..</p>
+										</div>
+									</div>
+								</div>
+								<div class="border-top" id="border-top2">
+									<div class="flex-head">
+										<div>
+											<h4 class="txt-dark-gray txt-small">Enter Your pledge</h4>
+										</div>
+										<div>
+											<button class="btn-white txt-medium"><span class="txt-dark-gray">$ </span>75</button>
+											<button class="btn btn-green btn-medium txt-medium" id="continue2">Continue</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-border opace">
+								<div class="card4-flexbox box-content">
+									<div class="circle" id="circle-el2"><div class="inner-circle" id="inner-circle2"></div></div>
+									<div class="flexbox-right">
+										<div class="flexbox-right-head">
+											<div class="flex-head">
+												<h4>Mahogany Special Edition</h4>
+												<h4 class="txt-green">Pledge $200 or more</h4>
+											</div>
+											<div class="flex2">
+												<h4>0</h4>
+												<span class="txt-dark-gray">left</span>
+											</div>
+										</div>
+										<div class="flexbox-right-para">
+											<p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
