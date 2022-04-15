@@ -21,7 +21,7 @@ Users should be able to:
 ![].(images/CrowdFundScreenshot.png)
 
 ### Links
-- Solution URL: [solution.com](https://github.com/nick335/)
+- Solution URL: [solution.com](https://github.com/nick335/crowdFund)
 - Live Site URL: [sunny.com](https://nick335.github.io/sunny/)
 
 ## My process
@@ -43,7 +43,7 @@ Users should be able to:
 ### Continued development
 - I will like to improve my knowledge of css animation especially the way the popup comes in.
 - Also the structure of my HTML code, i think it will be very confusing for others to read
-- And also the ability to detailed names to classes. 
+- And also the ability to give detailed names to classes. 
 
 ### Useful resources
 - (https://stackoverflow.com/)- this helped a lot in dealing with multiple problem i occured while coding like responsivness, positioning of text over images and hamburger menu
